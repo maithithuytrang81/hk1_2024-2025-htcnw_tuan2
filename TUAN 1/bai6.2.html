@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+            border: 2px solid #0b140b;
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-form fieldset {
+            border: 2px solid #1a1e1a;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .contact-form legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form input[type="file"],
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #2c2727;
+            border-radius: 4px;
+        }
+
+        .contact-form textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        .contact-form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #bec6bf;
+            color: rgb(47, 40, 40);
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 30%;
+        }
+
+        button:hover {
+            background-color: #101410;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-form">
+        <h1>Contact Us</h1>
+        <form action="#">
+            <fieldset>
+                <legend>Your message:</legend>
+                
+                <label for="to">To</label>
+                <input type="text" id="to" name="to" value="" readonly>
+
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email" placeholder="">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder=""></textarea>
+
+                <label for="file">Attach File</label>
+                <input type="file" id="file" name="file">
+            </fieldset>
+
+            <fieldset>
+                <legend>How you found us:</legend>
+
+                <label for="found">How did you hear of us</label>
+                <select id="found" name="found">
+                    <option value="google">Google</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="friend">A friend</option>
+                </select>
+
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+                    Ensure this box is checked if you would like to receive email updates
+                </label>
+            </fieldset>
+
+            <button type="submit">Send message</button>
+        </form>
+    </div>
+</body>
+</html>
