@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px; margin: 0px auto;
+        }
+        .wrapper{
+            height: 750px;
+            width: 960px;
+            background-color: antiquewhite;
+        }
+        header{
+            height: 150px;
+            width: 960px;
+            background-color: rgb(56, 78, 137);
+            position: relative;
+        }
+        header img{
+            top: 20px;
+            left: 10px;
+            position: absolute;
+        }
+        header h2{
+            top:20px ;
+            left: 120px;
+            position: absolute;
+            color: white;
+        }
+        header h4{
+            top:50px ;
+            left: 120px;
+            position: absolute;
+            color: white;
+        }
+        header #frm{ 
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        header #frm #btns { 
+            border: 1px solid gray;
+            padding: 2px;
+        }
+        
+        header #frm #btns { 
+            border: 1px solid gray;
+            padding: 2px;
+            border-radius: 50%;
+            background-color: cadetblue;
+        }
+        nav{
+            position: absolute;
+            bottom: 3px;
+            right: 20px;
+        }
+        .menu li{
+            display: inline-table;
+            background-color: rgb(26, 109, 187);
+            height: 50px;
+            line-height: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .menu li:hover{
+            background-color: rgb(242, 109, 217);
+        }
+        .menu li a{
+           color: white;
+           font-weight: bolder;
+           text-decoration: none;
+        }
+        .menu li .sub-menu{
+            display: none;
+            background-color: rgb(26, 109, 187);
+            height: 50px;
+            line-height: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: absolute;
+        }
+
+        .menu li: hover .sub-menu li{
+            display: block ;
+            background-color: rgb(26, 109, 187);
+            height: 50px;
+            line-height: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        footer {
+            text-align: center;
+            background-color: rgb(26, 62, 162);
+            color: white;
+            padding: 10px;
+            border-radius: 0 0 10px 10px;
+        }
+        .container {
+            width: 10%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .form-section {
+            width: 20%;
+        }
+        .info-section {
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+        }
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-section input, .form-section textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #764040;
+        }
+        .form-section input[type="submit"], .form-section input[type="reset"] {
+            width: 100px;
+            background-color: #283644;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-section input[type="submit"]:hover, .form-section input[type="reset"]:hover {
+            background-color: #2585e5;
+        }
+        .footer {
+            text-align: center;
+        }    
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <header>
+        <img src="../img/flower.png" alt="" srcset="" height="100" width="80">
+        <h2>
+            FlowerBox 360
+        </h2>
+        <h4>
+            ...to get your daily close of luxury roses!
+        </h4>
+        <form action="" method="post" id="frm">
+            <input type="text" name="txt5" id="txt5" placeholder="Nhap" required>
+           <button type="submit" id="btns"> GO</button>
+        </form>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Promotion</a></li>
+                <li><a href="#">Gift Baskets</a></li>
+                <li><a href="#">Flowers Services</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Home</a></li>
+                <li><a href="#">Promotion</a></li>
+                <li><a href="#">Gift Baskets</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h2>Why Not Contact Us Today!</h2>
+        <p>For FlowerBox 360 shoppers, that means not only can you send your friends and loved ones the highest quality flowers found online, but that you can do so at a great value.</p>
+            <p>Feel free to reach out to us for any inquiries or special requests!</p>
+    </div>
+    <div class="content">
+        <div class="form-section">
+            <h3>FlowerBox 360 Info!</h3>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="telephone">Telephone:</label>
+                <input type="tel" id="telephone" name="telephone" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+    <div class="info-section">
+        <h3>FlowerBox 360 Info!</h3>
+        <p><strong>Operating Hours:</strong><br>
+        Monday-Friday: 9:00am-5:00pm<br>
+        Saturday: 9:00am-1:00pm<br>
+        Sunday: Closed (No Deliveries)<br>
+        ORDER ONLINE 24/7</p>
+        <p><strong>Address:</strong><br>
+        12 Nguyen Van Bao St., Ward 4<br>
+        Go Vap District<br>
+        Ho Chi Minh City<br>
+        Tel: 0283 894 390<br>
+        Fax: 0283 9940 954</p>
+    </div>
+    <div class="discounts">
+        <img src="../img/rose.png" alt="Flower Discount" />
+        <div>
+            <h3>Discounts & Specials</h3>
+            <p>FlowerBox 360 offers many great discounts throughout the year, from coupons and promo codes to other savings. We also offer military flower discounts to our wonderful troops!</p>
+            <p><a href="#" style="color: rgb(39, 39, 224);">Read More &gt;</a></p>
+        </div>
+    </div>
+    <footer>
+        <p><h5>© 2017 All Rights Reserved - Software Engineering Department - Industrial University of Ho Chi Minh City</h5></p>
+    </footer>
+</div>
+</body>
+</html>
