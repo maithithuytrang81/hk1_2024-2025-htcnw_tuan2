@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/home.css">
+    <style>
+        * {
+    padding: 0px;
+    margin: 0px auto;
+}
+
+.wrapper {
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    height: 700px;
+}
+
+menu {
+    background-color:#0089ce ;
+    height: 10%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    border-bottom: 2px solid #1a1c1c; /* Đường viền dưới */
+    border-top: 2px solid;
+    margin-top: 0px
+
+    
+}
+
+menu h1 {
+    float: inline-start;
+    margin-top: 10px;
+ text-shadow:1px 2px 2px #ffb90692;
+    
+}
+
+.ri {
+    float: inline-end;
+    display: flex;
+}
+
+menu li {
+    list-style-type: none;
+    display: inline-block;
+    
+    
+}
+
+.ri ul {
+    margin: 20px;
+}
+
+.ri a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.ri a:hover {
+    color: blue;
+}
+
+.ri button {
+    margin-top: 20px;
+    background-color: rgb(17, 0, 255);
+    border-radius: 5px;
+    color: white;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+.aside figure {
+    text-align: left; /* Căn giữa hình ảnh và chú thích */
+}
+
+.aside figcaption {
+    margin-top: 10px; /* Tạo khoảng cách giữa hình ảnh và chú thích */
+    font-size: 20px; /* Điều chỉnh kích thước chữ cho phù hợp */
+  font-style: normal;
+    color: #000000; /* Màu sắc cho chú thích */
+}
+
+.section1 {
+    width: 50%;
+}
+
+.section1 p {
+    margin-top: 10px;
+}
+
+.section1 li {
+    list-style-type: lower-greek;
+    margin-left: 20px;
+}
+
+.section2 {
+    width: 100%;
+    height: 30%;
+}
+
+.section2 form {
+    width: 100%;
+    height: 100%;
+}
+
+.section2 input {
+    margin-top: 10px;
+}
+
+#ten {
+    width: 45%;
+    float: inline-start;
+}
+
+#em {
+    width: 45%;
+    float: inline-end;
+}
+
+#sub {
+    width: 100%;
+    float: left;
+}
+
+#mess {
+    width: 100%;
+    height: 50%;
+    margin-top: 1%;
+
+}
+
+.section2 button {
+    margin-left: 470px;
+    margin-top: 10px;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(191, 199, 206);
+}
+
+.tr {
+    float: inline-start;
+    width: 20%;
+    
+}
+
+.ph {
+    float: inline-end;
+    width: 70%;
+    display: flex;
+}
+.footer1{
+    background-color: #0089ce;
+    color: aliceblue;
+    padding: 10px;
+    width: 100%; /* Đặt chiều rộng là 100% để dàn đều */
+    text-align: center; /* Căn giữa nội dung */
+    margin: 0; /* Xóa các khoảng cách không cần thiết */
+    margin-top: 5%;
+}
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <menu>
+           
+            <h1>OnePage</h1>
+            <div class="ri">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <form>
+                    <button type="submit">Get started</button>
+                </form>
+               
+            </div>
+        </menu>
+        <div class="content">
+            <div class="aside">
+                <figure>
+                    <img src="../img/330px-Bánh_mì_thịt_nướng.png" alt="Description of the image">
+                    <figcaption><h2>This is the caption describing the image</h2></figcaption>
+                </figure>
+            </div>
+            <div class="section1">
+                <h2>Voluptatem dignissimos provident quasi corporis volutapes sit assumenda</h2>
+                <p>Lorem ipsum dolor sit amet, consectedur adipising elt, sed do elusmod tempor incididant ut labore et dolone magna aligua</p>
+                <ul>
+                    <li>
+                  <p>Ullamco laboris nisi ut aliquip ex ea commodo consequal</p>
+                    </li>
+                    <li>
+                        <p>Duis aute irure dolor in repretenderit in voluptate velit</p>
+                    </li>
+                    <li>
+                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequal. Duis aute irure dolor in repretenderit in voluptate trideta stocara aperdqa mastira dolore eu fugiat muiia paratur </p>
+                    </li>
+                </ul>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequal. Duis aute irure dolor in repretenderit in voluptate velit esse cillum dolore eu fugiat rulla paritur. Excepteur sint occaocat cupiddistat ran gradient </p>
+            </div>
+        </div>
+        <div class="section2">
+            <form>
+                <input type="text" placeholder="Your Name" id="ten">
+                <input type="text" placeholder="Your Email" id="em">
+                <input type="text" placeholder="Subject" id="sub">
+               
+                <textarea name="Send Message" id="mess">Send Message</textarea> 
+                
+            </form>
+        </div>
+        <footer>
+            <div class="tr">
+                <h1>OnePage</h1>
+                <p>Crats humannun odio eu gougad pu naaaa liona rure dolor in repretenderit in voluptate velit </p>
+            </div>
+            <div class="ph">
+                <div class="c1">
+                    <h2>Useful Links</h2>
+                    <p>Home</p>
+                    <p>About us</p>
+                    <p>Services</p>
+                    <p>Terms of service</p>
+                    <p>Primary policy</p>
+                </div>
+                <div class="c2">
+                    <h2>Our Services</h2>
+                    <p>Web design</p>
+                    <p>Web development</p>
+                    <p>Product Management</p>
+                    <p>Marketing</p>
+                    <p>Graphic Design</p>
+                </div>
+                <div class="c3">
+                    <h2>Contact Us</h2>
+                    <p>A10B Adam Street</p>
+                    <p>New York, NY 555022</p>
+                    <p>United States</p><br>
+                    <p>Phone: +1 5589 55488 55</p>
+                    <p>Email: Info@exams.com</p>
+                </div>
+            </div>
+           
+        </div>
+        <div class="footer1">
+            <p>&copy; 2024 OnePage. All Rights Reserved. Designed by [Your Name or Company]</p>
+        </div>
+        </footer>
+       
+</body>
+
+</html>

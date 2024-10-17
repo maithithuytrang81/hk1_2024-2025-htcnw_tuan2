@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+    <form action="signin.php" method="post">
+        <table border="1">
+       <tr>
+            <td colspan="2" bgcolor="yellow"><h1>sign in </h1> </td>
+        </tr>
+       <tr> 
+        <td colspan="3">Email address <input type="text" name="email"/><BR/></td>
+       </tr>
+        <tr>
+            <td colspan="3">password <input type="password" name="password"/><br/></td>
+        </tr>
+        <tr>
+            <td>
+                enter address
+            </td>
+            <td>
+                <textarea name="address"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                selcet game
+            </td>
+            <td>
+                <input type="checkbox" id="1" name=" game"/>
+                <label for="1"> 1</label><br/>
+                <input type="checkbox" id="2" name=" game"/>
+                <label for="2">2</label><br/>
+                <input type="checkbox" id="3" name=" game"/>
+                <label for="3">3</label><br/>
+                <input type="checkbox" id="4" name=" game"/>
+                <label for="4">4</label><br/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                gender
+            </td>
+            <td>
+                <input type="radio" id="male" name="gender"/>
+                <label for=" male" > 11</label>
+                <input type="radio" id="female" name="gender"/>
+                <label for=" male" > 22</label><br/>
+            </td>
+        </tr>
+        <tr>
+            <td>age</td>
+            <td>
+                <select name="Age">
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>avatar</td>
+            <td>
+                <input type="file" name="avatar" id="">
+            </td>
+        </tr>
+       <tr>
+        <td colspan="2">
+<input type="button" value="click me"/>
+<input type="reset" value="reset"/>
+<input type="submit" value="submit"/>
+        </td>
+       </tr>
+    </table>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .wrapper{
+            width: 100%;
+            height: 70px;
+            margin-top: 1%;
+           
+        }
+        menu{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            height: 100%;
+            color: black;
+            background-color: aqua;
+            padding: 0%;
+            margin-top: 0px ;
+        }
+        menu h1{
+        float: inline-start;
+        margin-top: 10px;
+        }
+        .ri{
+            display: flex;
+           float: inline-end;
+        }
+        menu li{
+           list-style-type: none;
+           display: inline-block;
+        }
+        .ri ul{
+            margin: 20px;
+        }
+        .ri a{
+            text-decoration: none;
+            color: black;
+            padding: 70px;
+           
+        }
+        .ri a:hover{
+          color: rgb(181, 44, 44);
+        
+        }
+        .ri button{
+            border-radius: 5px;
+            background-color: rgb(36, 69, 237);
+            color: aliceblue;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .content{
+            display: flex;
+            width: 100%;
+            height: 50%;
+        }
+        .section1{
+width: 50%;
+        }
+        .section1 p{
+            margin: 5%;
+        }
+        .section1 h2{
+            margin: 5%;
+        }
+        .aside{
+            width: 90%;
+            text-align: end;
+        }
+        .aside image{
+            width: 50%; /* Điều chỉnh kích thước hình ảnh nếu cần */
+    margin-right: 0; /* Đảm bảo không có khoảng cách ở bên phải */
+    display: block; 
+        }
+        footer{
+            width: 100%;
+    background-color: rgb(179, 233, 255); /* Màu nền chung cho toàn footer */
+    display: flex; /* Giúp sắp xếp các phần tử theo hàng ngang */
+    padding: 20px 0;
+    
+        }
+        .ph{
+            float: inline-start;
+            width: 20%;
+            height: 100%;
+            margin-top: -2%;
+      
+        }
+    
+        .ph button{
+            background-color: black;
+            color: aliceblue;
+        }
+        .tr{
+            float: inline-end;
+            display: flex;
+            margin-top: -2%;
+            margin-left: 30%;
+            width: 100%;
+           
+        }
+        .tr .c1, .tr .c2, .tr .c3 {
+    width: 90%; /* Mỗi cột chiếm 30% chiều rộng của phần tử cha */
+    padding: 0 50px; /* Tạo khoảng cách giữa các cột */
+}
+.footer1{
+    background-color: #0089ce;
+    color: aliceblue;
+    padding: 2px;
+    width: 100%;
+    height: 50px;
+    bottom: -150px;
+    text-align: center;
+    position: absolute;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <menu>
+           <h1>OnePage</h1>
+           <div class="ri">
+            <ul>
+                <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+            </ul>
+            <form>
+                <button type="button" id="get">Get started</button>
+            </form>
+           </div>
+        </menu>
+    </div>
+    <div class="content">
+        <div class="section1">
+            <P>BAITAP1</P>
+            <P>LUYENTAP</P>
+            <P>BAITAPVENHA</P>
+            <H2>Luyện các bài tập về nhà</H2>
+            <p><i>baitap</i></p>
+        </div>
+        <div class="aside">
+            <img src="../stt85_22651871_MaiThiThuyTrang_Tuan5/img/client1.jpg">
+
+        </div>
+
+        </div>
+        <footer>
+            <div class="ph">
+                <h1>OnePage</h1>
+                <p>Crats humannun odio eu gougad pu naaaa liona rure dolor in repretenderit in voluptate velit </p>
+                <p>Email</p>
+                <input type="text" placeholder="Your email" id="em">
+                <p>password</p>
+                <input type="password"" id="pas"></br>
+                <button type="submit" id="c1"> GO</button>
+            </div>
+           
+            <div class="tr">
+                <div class="c1">
+                    <h2>Useful Links</h2>
+                    <p>Home</p>
+                    <p>About us</p>
+                    <p>Services</p>
+                    <p>Terms of service</p>
+                    <p>Primary policy</p>
+                </div>
+                <div class="c2">
+                    <h2>Our Services</h2>
+                    <p>Web design</p>
+                    <p>Web development</p>
+                    <p>Product Management</p>
+                    <p>Marketing</p>
+                    <p>Graphic Design</p>
+                </div>
+                <div class="c3">
+                    <h2>Contact Us</h2>
+                    <p>A10B Adam Street</p>
+                    <p>New York, NY 555022</p>
+                    <p>United States</p><br>
+                    <p>Phone: +1 5589 55488 55</p>
+                    <p>Email: Info@exams.com</p>
+                </div>
+                
+            </div>
+            <div class="footer1">
+                <p>&copy; 2024 OnePage. All Rights Reserved. Designed by [Your Name or Company]</p>
+               </div>
+       </footer>
+</body>
+</html>

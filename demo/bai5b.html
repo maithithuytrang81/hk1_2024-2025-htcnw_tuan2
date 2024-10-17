@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 960px;
+            height: 750px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+        .top-menu {
+            height: 50px;
+            width: 100%;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 50px;
+        }
+        .header {
+            height: 150px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 150px;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+        }
+        .left, .center, .right {
+            height: 100%;
+        }
+        .left {
+            width: 20%;
+            background-color: lightcoral;
+        }
+        .center {
+            width: 40%;
+            background-color: lightgreen;
+        }
+        .right {
+            width: 40%;
+            background-color: lightyellow;
+        }
+        .footer {
+            height: 100px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-menu">Top Menu</div>
+        <div class="header">Header</div>
+        <div class="content">
+            <div class="left">W: 20%</div>
+            <div class="center">W: 40%</div>
+            <div class="right">W: 40%</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
