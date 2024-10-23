@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng nhập</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0px;
+            
+        }
+        .wrapper {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            padding-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: aquamarine;
+            
+        }
+        
+        #txtus {
+            margin-bottom: 10px;
+        }
+        
+        #txtmk {
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            margin-left: 30px;
+            
+        }
+        
+        #nhap  {
+            margin-left: 80px;
+            padding: 10px;
+            border-color: rgb(12, 17, 17);
+            color: rgb(18, 18, 32);
+        }
+    </style>
+
+    <script>
+        function Nhap() {
+            var tendn = document.getElementById("txtus").value;
+            var mk = document.getElementById("txtmk").value;
+
+            //checkbox:luu gia tri vao mang Array()
+            var cafe = new Array();
+            var taphop = document.querySelectorAll("input[type='checkbox']");
+            taphop.forEach(function(chk) {
+                if (chk.checked) 
+                cafe.push(chk.value);
+            });
+            //radio: luu 1 gia tri
+            var gtinh;
+            var taphopgt = document.querySelectorAll("input[name='gt']");
+            taphopgt.forEach(function(ra) {
+                if (ra.checked) gtinh = ra.value;
+            });
+            //xu li tendn, mk:bo qua
+            var w = window.open("infor.html");
+            //luu du lieu set: ghi vao 
+            localStorage.setItem("us", tendn);
+            localStorage.setItem("pd", mk);
+            localStorage.setItem("cf", cafe);
+            localStorage.setItem("gt", gtinh);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="">
+            <input type="text" id="txtus" placeholder="User name">
+            <br>
+            <input type="password" id="txtmk" placeholder="Password">
+            <br>
+            <p>Giới Tính</p>
+            <input type="radio" name="gt" value="Nam">Nam
+            <input type="radio" name="gt" value="Nữ">Nữ
+            <br>
+            <p>Cafe bạn chọn</p>
+            <input type="checkbox" value="Trung Nguyen">
+            Trung Nguyen
+            <br>
+            <input type="checkbox" value="MeKong">MeKong
+            <br>
+            <input type="checkbox" value="New Blue">New Blue 
+            <br>
+            <input type="checkbox" value="Trà sữa">Trà sữa
+            <br>
+            <input type="button" value="Nhập" onclick="Nhap()" id="nhap">
+        </form>
+    </div>
+
+</body>
+
+</html>

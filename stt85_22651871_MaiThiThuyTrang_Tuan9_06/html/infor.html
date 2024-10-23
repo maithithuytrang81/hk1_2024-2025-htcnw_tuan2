@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin người dùng</title>
+    <link rel="stysheet" href="../css/bootstrap.min.css">
+    <cript src="../js/jquery-3.7.1.min.js"></cript>
+    <cript src="../js/bootstrap.min.js"></cript>
+    <style>* {
+        margin: 0 auto;
+        padding: 0px;
+        
+    
+</style>
+</head>
+
+<body>
+    <h1>Infor</h1>
+    <table border="1" width="200">
+        <tr>
+            <th colspan="2">Thông tin đăng nhập </th>
+        </tr>
+        <tr>
+            <td>User Name</td>
+            <td id="us"> AAAA</td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td id="pw">BBBB</td>
+        </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td id="gen">DDDD</td>
+        </tr>
+        <tr>
+            <td>Café bạn chọn</td>
+            <td id="cf">CCCC</td>
+        </tr>
+    </table>
+
+    <script>
+        // Lấy dữ liệu đã lưu get: lấy ra infor.html
+        var gt1, gt2;
+        gt1 = localStorage.getItem("us")
+        gt2 = localStorage.getItem("pd")
+        gt3 = localStorage.getItem("cf")
+        gt4 = localStorage.getItem("gt")
+        //xuat ra html
+        //xuat vaof id da co
+        document.getElementById("us").innerHTML = localStorage.getItem("us");
+        document.getElementById("pw").innerHTML = localStorage.getItem("pd");
+        document.getElementById("gen").innerHTML = localStorage.getItem("gt");
+        document.getElementById("cf").innerHTML = localStorage.getItem("cf");
+    </script>
+</body>
+
+</html>
